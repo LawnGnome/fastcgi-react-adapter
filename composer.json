@@ -1,0 +1,28 @@
+{
+    "name": "lawngnome/fastcgi-react-adapter",
+    "type": "library",
+    "description": "An adapter that allows ebernhardson/fastcgi to be used within a React event loop",
+    "keywords": ["fastcgi"],
+    "homepage": "https://github.com/LawnGnome/fastcgi-react-adapter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Harvey",
+            "email": "aharvey@php.net",
+            "homepage": "http://about.me/LawnGnome",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ebernhardson/fastcgi": "0.1.*",
+        "react/promise": "^2",
+        "react/socket-client": "0.4.*",
+        "react/stream": "0.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LawnGnome\\FastCGIReactAdapter\\": "lib/"
+        }
+    }
+}
