@@ -25,7 +25,7 @@ class ResponseContext {
      * @param packet The packet to parse.
      * @return True if the packet is an END_REQUEST packet, false otherwise.
      */
-    public function handlePacket(string $packet): bool {
+    public function handlePacket(array $packet): bool {
         switch ($packet['type']) {
             case FCGIClient::END_REQUEST:
             case 0:
