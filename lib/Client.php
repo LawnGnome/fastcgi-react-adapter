@@ -8,13 +8,13 @@ use React\Promise\{Promise, PromiseInterface};
 use React\Stream\Stream;
 
 /**
- * The asynchronous ReactClient.
+ * The asynchronous Client.
  *
  * Note that while this class extends EBernhardson\FastCGI\Client, this is
  * solely to reuse the helper methods within that class which are declared
  * protected. This class should be considered to have its own, unique API.
  */
-abstract class ReactClient extends FCGIClient {
+abstract class Client extends FCGIClient {
     /**
      * Implemented by concrete implementations to create a promise that will
      * give a Stream when fulfilled.
