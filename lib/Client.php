@@ -109,6 +109,7 @@ abstract class Client extends FCGIClient {
         if ($paramsRequest) {
             $request .= $this->buildPacket(self::PARAMS, $paramsRequest);
         }
+        $request .= $this->buildPacket(self::PARAMS, '');
 
         if ($stdin) {
             $request .= $this->buildPacket(self::STDIN, $stdin);
